@@ -6,7 +6,7 @@ class TadpolesController < ApplicationController
     @tadpole = Tadpole.find(params[:id])
     @frog = Frog.create(name: @tadpole.name, color: @tadpole.color, pond: @tadpole.pond)
     @tadpole.destroy
-    redirect frog_path(@frog)
+    redirect_to frog_path(@frog)
   end
 
   def index
