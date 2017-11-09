@@ -48,7 +48,7 @@ class TadpolesController < ApplicationController
   end
 
   def metamorphose
-
+    "metamorphose"
   end
 
   private
